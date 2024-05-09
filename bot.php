@@ -44,7 +44,6 @@ return curl($url,headers());
 
 $dashboard=faucet();
 
-$usr=explode('a[href='https://99faucet.com/dashboard']').attr('data-active', 'true');
 $usr=explode('<p class="username">',$dashboard)[1];
 $usr=explode('</p>',$usr)[0];
 echo "user: ".$usr." \n";
